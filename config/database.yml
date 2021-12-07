@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: letsrender_production
   username: letsrender
   password: <%= ENV['LETSRENDER_DATABASE_PASSWORD'] %>
